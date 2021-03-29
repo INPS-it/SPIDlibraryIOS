@@ -1,0 +1,17 @@
+// SPDX-FileCopyrightText: 2021 Istituto Nazionale Previdenza Sociale
+//
+// SPDX-License-Identifier: BSD-3-Clause
+
+"info_text" = "Maggiori Info";
+"request_spid_text" = "Non hai SPID?";
+"title_alert" = "Attenzione";
+"provider_error" = "Si è verificato un errore nella selezione del provider";
+
+// SpidError
+
+"error_url_not_working" = "Si è verificato un errore nell'URL %@";
+"error_not_present" = "Si è verificato un errore nel presentare %@";
+"error_key_settings" = "Si è verificato un errore nella chiave %@";
+"error_timeout" = "Timeout scaduto";
+"error_url_not_in_https" = "Si è verificato un errore nella chiave %@. Non è in HTTPS";
+"error_connection" = "Si è verificato un errore di rete, controlla la tua connessione internet oppure riprova tra poco.";

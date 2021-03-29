@@ -1,0 +1,7 @@
+// SPDX-FileCopyrightText: 2021 Istituto Nazionale Previdenza Sociale
+//
+// SPDX-License-Identifier: BSD-3-Clause
+
+"title" = "SPID";
+"login_success" = "Login effettuato";
+"login_error" = "Si è verificato un errore";

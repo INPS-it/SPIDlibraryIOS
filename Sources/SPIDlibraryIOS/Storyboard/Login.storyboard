@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lwd-RO-cRa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="B7h-W4-VmK">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Lwd-RO-cRa" customClass="LoginViewController" customModule="SPIDlibraryIOS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cY-Ga-H1k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lA1-lD-Gmm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjG-RA-vfH">
+                                <rect key="frame" x="362" y="44" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="dGJ-av-ZZc"/>
+                                    <constraint firstAttribute="width" constant="36" id="ng6-oa-Thg"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="Lwd-RO-cRa" eventType="touchUpInside" id="sV7-dz-4Kz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wxx-aM-CMx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lA1-lD-Gmm" firstAttribute="trailing" secondItem="Wxx-aM-CMx" secondAttribute="trailing" id="4uD-lo-OnQ"/>
+                            <constraint firstItem="lA1-lD-Gmm" firstAttribute="leading" secondItem="Wxx-aM-CMx" secondAttribute="leading" id="S29-Fp-Ke6"/>
+                            <constraint firstItem="Wxx-aM-CMx" firstAttribute="trailing" secondItem="rjG-RA-vfH" secondAttribute="trailing" constant="16" id="SHf-BM-bGG"/>
+                            <constraint firstItem="lA1-lD-Gmm" firstAttribute="top" secondItem="Wxx-aM-CMx" secondAttribute="top" id="cjd-6F-meB"/>
+                            <constraint firstItem="rjG-RA-vfH" firstAttribute="top" secondItem="Wxx-aM-CMx" secondAttribute="top" id="nhc-HS-7Vq"/>
+                            <constraint firstItem="lA1-lD-Gmm" firstAttribute="bottom" secondItem="Wxx-aM-CMx" secondAttribute="bottom" id="wtb-U6-eii"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XgG-sY-pVq"/>
+                    <connections>
+                        <outlet property="webViewProvider" destination="lA1-lD-Gmm" id="ptk-SO-oaz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3MZ-2o-vJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733.8461538461538" y="-65.402843601895725"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SPIDlibraryIOS",
+        "repositoryURL": "https://github.com/INPS-it/SPIDlibraryIOS.git",
+        "state": {
+          "branch": null,
+          "revision": "dd8ed95040103943e694e633562e83ebd721926b",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

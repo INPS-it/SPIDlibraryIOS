@@ -1,0 +1,17 @@
+// SPDX-FileCopyrightText: 2021 Istituto Nazionale Previdenza Sociale
+//
+// SPDX-License-Identifier: BSD-3-Clause
+
+"info_text" = "More Info";
+"request_spid_text" = "Don't have SPID?";
+"title_alert" = "Attention";
+"provider_error" = "An error occurred in the provider selection";
+
+// SpidError
+
+"error_url_not_working" = "An error occurred in the URL %@";
+"error_not_present" = "There was an error present %@";
+"error_key_settings" = "An error occurred in the key %@";
+"error_timeout" = "Timeout expired";
+"error_url_not_in_https" = "An error occurred in the key %@. It is not HTTPS";
+"error_connection" = "A network error has occurred, please check your internet connection or try again shortly.";
