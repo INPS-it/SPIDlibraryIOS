@@ -7,13 +7,13 @@ import Foundation
 
 
 public enum IdentityProviderConstants: String {
-    case aruba = "aruba"
-    case infocert = "infocert"
-    case intesa = "intesa"
-    case lepida = "lepida"
-    case namirial = "namirial"
-    case poste = "poste"
-    case sielte = "sielte"
-    case spiditalia = "spiditalia"
-    case tim = "tim"
+    case aruba
+    case infocert
+    case intesa
+    case lepida
+    case namirial
+    case poste
+    case sielte
+    case spiditalia
+    case tim
 }
