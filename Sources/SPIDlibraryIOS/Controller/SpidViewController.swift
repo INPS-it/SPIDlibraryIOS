@@ -13,7 +13,7 @@ public class SpidViewController: UIViewController {
     @IBOutlet weak var infoBtn: UIButton!
     @IBOutlet weak var requestSpidBtn: UIButton!
     
-    var spidDelegate: SpidDelegate?
+    weak var spidDelegate: SpidDelegate?
     var spidConfig: SpidConfig?
     var randomProviders: [Provider] = []
     
