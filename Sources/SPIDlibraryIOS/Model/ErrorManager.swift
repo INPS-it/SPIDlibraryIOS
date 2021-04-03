@@ -8,58 +8,47 @@ import Foundation
 struct ErrorManager {
     
     enum Error: String {
-        case authPageUrl = "authPageUrl"
-        case callbackPageUrl = "callbackPageUrl"
-        case spidPageInfoUrl = "spidPageInfoUrl"
-        case requestSpidPageUrl = "requestSpidPageUrl"
-        case identityProviderKeys = "identityProviderKeys"
+        case authPageUrl
+        case callbackPageUrl
+        case spidPageInfoUrl
+        case requestSpidPageUrl
+        case identityProviderKeys
     }
     
     var spidConfig: SpidConfig?
     
-    func checkError() -> SpidError? {
-        guard let authPageUrl = spidConfig?.authPageUrl, !authPageUrl.isEmpty else {
-            return SpidError.Settings(key: Error.authPageUrl.rawValue)
+    private func tryError(case: Error, value: Any?) throws {
+        if let value = value as? String, value.isEmpty == false {
+            switch `case` {
+            case .authPageUrl, .spidPageInfoUrl, .requestSpidPageUrl:
+                guard value.checkHTTPS() else {
+                    throw SpidError.UrlNotHttps(key: Error.authPageUrl.rawValue)
+                }
+                
+                guard let _ = URL(string: value) else {
+                    throw SpidError.UrlNotWorking(url: value)
+                }
+            default: break
+            }
+            
+        } else if let _ = value as? IdentityProviderKeys {
+            return
+        } else {
+            throw SpidError.Settings(key: `case`.rawValue)
         }
+    }
     
-        guard let callbackPageUrl = spidConfig?.callbackPageUrl, !callbackPageUrl.isEmpty else {
-            return SpidError.Settings(key: Error.callbackPageUrl.rawValue)
-        }
-        
-        guard let spidPageInfoUrl = spidConfig?.spidPageInfoUrl, !spidPageInfoUrl.isEmpty else {
-            return SpidError.Settings(key: Error.spidPageInfoUrl.rawValue)
-        }
-        
-        guard let requestSpidPageUrl = spidConfig?.requestSpidPageUrl, !requestSpidPageUrl.isEmpty else {
-            return SpidError.Settings(key: Error.requestSpidPageUrl.rawValue)
-        }
-
-        guard let _ = spidConfig?.identityProviderKeys else {
-            return SpidError.Settings(key: Error.identityProviderKeys.rawValue)
-        }
-        
-        guard authPageUrl.checkHTTPS() else {
-            return SpidError.UrlNotHttps(key: Error.authPageUrl.rawValue)
-        }
-        
-        guard spidPageInfoUrl.checkHTTPS() else {
-            return SpidError.UrlNotHttps(key: Error.spidPageInfoUrl.rawValue)
-        }
-        
-        guard requestSpidPageUrl.checkHTTPS() else {
-            return SpidError.UrlNotHttps(key: Error.requestSpidPageUrl.rawValue)
-        }
-        
-        guard let _ = URL(string: authPageUrl)  else {
-            return SpidError.UrlNotWorking(url: authPageUrl)
-        }
-        
-        guard let _ = URL(string: spidPageInfoUrl) else {
-            return SpidError.UrlNotWorking(url: spidPageInfoUrl)
-        }
-        
-        guard let _ = URL(string: requestSpidPageUrl) else {
-            return SpidError.UrlNotWorking(url: requestSpidPageUrl)
+    func checkError() -> SpidError? {
+        do {
+            try tryError(case: .authPageUrl, value: spidConfig?.authPageUrl)
+            try tryError(case: .callbackPageUrl, value: spidConfig?.callbackPageUrl)
+            try tryError(case: .spidPageInfoUrl, value: spidConfig?.spidPageInfoUrl)
+            try tryError(case: .requestSpidPageUrl, value: spidConfig?.requestSpidPageUrl)
+            try tryError(case: .identityProviderKeys, value: spidConfig?.identityProviderKeys)
+        } catch {
+            if let error = error as? SpidError {
+                return error
+            }
         }
         
         return nil
