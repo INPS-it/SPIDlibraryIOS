@@ -54,7 +54,6 @@ class LoginViewController: UIViewController, WKNavigationDelegate {
     
     
     @IBAction func dismiss(_ sender: Any) {
-        //IMPORTANT - invalidate timer when dismissing
         self.timer?.invalidate()
         self.timer = nil
         

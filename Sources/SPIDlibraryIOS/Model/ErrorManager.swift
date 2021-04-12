@@ -22,7 +22,7 @@ struct ErrorManager {
             switch `case` {
             case .authPageUrl, .spidPageInfoUrl, .requestSpidPageUrl:
                 guard value.checkHTTPS() else {
-                    throw SpidError.UrlNotHttps(key: Error.authPageUrl.rawValue)
+                    throw SpidError.UrlNotHttps(key: `case`.rawValue)
                 }
                 
                 guard let _ = URL(string: value) else {
