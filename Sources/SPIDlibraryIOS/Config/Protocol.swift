@@ -7,7 +7,7 @@ import UIKit
 
 //Implement this protocol in the class where you want to instantiate the login with spid
 
-public protocol SpidDelegate:class {
+public protocol SpidDelegate: AnyObject {
     func loginSuccess(response: SpidResponse)
     func onError(error: SpidError)
 }
