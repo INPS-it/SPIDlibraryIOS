@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
 
 import Foundation
+import UIKit
 
 public class SpidConfig {
 
@@ -31,7 +32,7 @@ public class SpidConfig {
         self.spidPageInfoUrl = spidPageInfoUrl
         self.requestSpidPageUrl = requestSpidPageUrl
         self.identityProviderKeys = identityProviderKeys
-        self.timeout = timeout
+        self.timeout = UIAccessibility.isVoiceOverRunning ? Int.max : timeout
         self.queryStringParams = queryStringParams
     }
 }

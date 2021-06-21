@@ -15,3 +15,7 @@
 "error_timeout" = "Timeout expired";
 "error_url_not_in_https" = "An error occurred in the key %@. It is not HTTPS";
 "error_connection" = "A network error has occurred, please check your internet connection or try again shortly.";
+
+// Accessibility
+
+"accessibility_provider" = "You have selected the %@ provider";

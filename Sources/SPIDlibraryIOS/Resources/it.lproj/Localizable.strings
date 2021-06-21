@@ -15,3 +15,7 @@
 "error_timeout" = "Timeout scaduto";
 "error_url_not_in_https" = "Si è verificato un errore nella chiave %@. Non è in HTTPS";
 "error_connection" = "Si è verificato un errore di rete, controlla la tua connessione internet oppure riprova tra poco.";
+
+// Accessibility
+
+"accessibility_provider" = "Hai selezionato il provider %@";

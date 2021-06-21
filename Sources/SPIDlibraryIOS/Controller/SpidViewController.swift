@@ -125,6 +125,8 @@ extension SpidViewController: UITableViewDataSource {
         let cell: ProviderCell = tableView.dequeueReusableCell(withIdentifier: ProviderCell.identifier) as! ProviderCell
         let currentProvider = randomProviders[indexPath.row]
         cell.providerImage?.image = UIImage(named: currentProvider.name, in: .module, compatibleWith: nil)
+        cell.accessibilityLabel = String.localizedStringWithFormat("accessibility_provider".localized(), currentProvider.name)
+
         return cell
     }
     
