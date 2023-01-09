@@ -9,7 +9,7 @@ import Foundation
 
 final class SPIDlibraryIOSTests: XCTestCase {
     
-    let identityProviderKeys = IdentityProviderKeys(aruba: "aruba", infocert: "infocert", intesa: "intesa", lepida: "lepida", namirial: "namirial", poste: "poste", sielte: "sielte", spiditalia: "spiditalia", teamSystem: "teamSystem", tim: "tim")
+    let identityProviderKeys = IdentityProviderKeys(aruba: "aruba", infocert: "infocert", intesa: "intesa", lepida: "lepida", namirial: "namirial", poste: "poste", sielte: "sielte", spiditalia: "spiditalia", teamsystem: "teamsystem", tim: "tim")
     
     func testPresentProviderUI() {
         let instance = SpidViewController.instance()

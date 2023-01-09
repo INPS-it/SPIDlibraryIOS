@@ -23,7 +23,7 @@ struct Constants {
         static let poste = "<Poste id here>"
         static let sielte = "<Sielte id here>"
         static let spiditalia = "<Spiditalia id here>"
-        static let teamSystem = "<TeamSystem id here>"
+        static let teamsystem = "<teamsystem id here>"
         static let tim = "<Tim id here>"
     }
 }

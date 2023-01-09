@@ -40,7 +40,7 @@ public class ViewController: UIViewController, SpidDelegate {
                                                              poste: Constants.IdentityProvider.poste,
                                                              sielte: Constants.IdentityProvider.sielte,
                                                              spiditalia: Constants.IdentityProvider.spiditalia,
-                                                             teamSystem: Constants.IdentityProvider.teamSystem,
+                                                             teamsystem: Constants.IdentityProvider.teamsystem,
                                                              tim: Constants.IdentityProvider.tim)
         
 let spidConfig = SpidConfig.init(authPageUrl: Constants.authPageUrl, callbackPageUrl: Constants.callbackPageUrl, spidPageInfoUrl: Constants.spidPageInfoUrl, requestSpidPageUrl: Constants.requestSpidPageUrl, identityProviderKeys: identityProviderKeys, queryStringParams: Constants.queryStringParams)
