@@ -13,11 +13,11 @@
 		4C11AE5B25DD5AC40043BD87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C11AE5925DD5AC40043BD87 /* Main.storyboard */; };
 		4C11AE5D25DD5AC70043BD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C11AE5C25DD5AC70043BD87 /* Assets.xcassets */; };
 		4C11AE6025DD5AC70043BD87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C11AE5E25DD5AC70043BD87 /* LaunchScreen.storyboard */; };
+		7EBF1571296C0CF7003BBDFF /* SPIDlibraryIOS in Frameworks */ = {isa = PBXBuildFile; productRef = 7EBF1570296C0CF7003BBDFF /* SPIDlibraryIOS */; };
 		95A9B02825DEAC1400F1ADAE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A9B02725DEAC1400F1ADAE /* UIViewController+Extension.swift */; };
 		95A9B02E25DEACE300F1ADAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95A9B03025DEACE300F1ADAE /* Localizable.strings */; };
 		95A9B03525DEADBA00F1ADAE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A9B03425DEADBA00F1ADAE /* String+Extension.swift */; };
 		95BC4E1E25DD6BC8007948FF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC4E1D25DD6BC8007948FF /* Constants.swift */; };
-		95C251EA25F2395800366C64 /* SPIDlibraryIOS in Frameworks */ = {isa = PBXBuildFile; productRef = 95C251E925F2395800366C64 /* SPIDlibraryIOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C251EA25F2395800366C64 /* SPIDlibraryIOS in Frameworks */,
+				7EBF1571296C0CF7003BBDFF /* SPIDlibraryIOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +109,7 @@
 			);
 			name = Sample;
 			packageProductDependencies = (
-				95C251E925F2395800366C64 /* SPIDlibraryIOS */,
+				7EBF1570296C0CF7003BBDFF /* SPIDlibraryIOS */,
 			);
 			productName = Simple;
 			productReference = 4C11AE5025DD5AC40043BD87 /* Sample.app */;
@@ -140,7 +140,7 @@
 			);
 			mainGroup = 4C11AE4725DD5AC40043BD87;
 			packageReferences = (
-				95C251E825F2395800366C64 /* XCRemoteSwiftPackageReference "SPIDlibraryIOS" */,
+				7EBF156F296C0CF6003BBDFF /* XCRemoteSwiftPackageReference "SPIDlibraryIOS" */,
 			);
 			productRefGroup = 4C11AE5125DD5AC40043BD87 /* Products */;
 			projectDirPath = "";
@@ -392,9 +392,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		95C251E825F2395800366C64 /* XCRemoteSwiftPackageReference "SPIDlibraryIOS" */ = {
+		7EBF156F296C0CF6003BBDFF /* XCRemoteSwiftPackageReference "SPIDlibraryIOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/INPS-it/SPIDlibraryIOS.git";
+			repositoryURL = "https://github.com/INPS-it/SPIDlibraryIOS";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.4;
@@ -403,9 +403,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		95C251E925F2395800366C64 /* SPIDlibraryIOS */ = {
+		7EBF1570296C0CF7003BBDFF /* SPIDlibraryIOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 95C251E825F2395800366C64 /* XCRemoteSwiftPackageReference "SPIDlibraryIOS" */;
+			package = 7EBF156F296C0CF6003BBDFF /* XCRemoteSwiftPackageReference "SPIDlibraryIOS" */;
 			productName = SPIDlibraryIOS;
 		};
 /* End XCSwiftPackageProductDependency section */
