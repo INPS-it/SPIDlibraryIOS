@@ -15,5 +15,6 @@ public enum IdentityProviderConstants: String {
     case poste
     case sielte
     case spiditalia
+    case teamSystem
     case tim
 }

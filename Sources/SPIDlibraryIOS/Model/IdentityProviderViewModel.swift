@@ -19,6 +19,7 @@ struct IdentityProviderViewModel {
             Provider(name: IdentityProviderConstants.poste.rawValue, idp: identityProviderKeys.poste),
             Provider(name: IdentityProviderConstants.sielte.rawValue, idp: identityProviderKeys.sielte),
             Provider(name: IdentityProviderConstants.spiditalia.rawValue, idp: identityProviderKeys.spiditalia),
+            Provider(name: IdentityProviderConstants.teamSystem.rawValue, idp: identityProviderKeys.teamSystem),
             Provider(name: IdentityProviderConstants.tim.rawValue, idp: identityProviderKeys.tim)
         ].shuffled()
     }
