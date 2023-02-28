@@ -13,8 +13,8 @@ public class SpidViewController: UIViewController {
     @IBOutlet weak var infoBtn: UIButton!
     @IBOutlet weak var requestSpidBtn: UIButton!
     
-    weak var spidDelegate: SpidDelegate?
-    var spidConfig: SpidConfig?
+    public weak var spidDelegate: SpidDelegate?
+    public var spidConfig: SpidConfig?
     var randomProviders: [Provider] = []
     
     public override func viewDidLoad() {
@@ -74,7 +74,7 @@ public class SpidViewController: UIViewController {
         }        
     }
     
-    static func instance() -> SpidViewController? {
+    public static func instance() -> SpidViewController? {
         let storyboard = UIStoryboard(name: "Provider", bundle: .module)
         let spidViewController = storyboard.instantiateInitialViewController() as? SpidViewController
         return spidViewController
