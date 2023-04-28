@@ -19,7 +19,6 @@ class ViewController: UIViewController, SpidDelegate {
         
         let identityProviderKeys = IdentityProviderKeys.init(aruba: Constants.IdentityProvider.aruba,
                                                              infocert: Constants.IdentityProvider.infocert,
-                                                             intesa: Constants.IdentityProvider.intesa,
                                                              lepida: Constants.IdentityProvider.lepida,
                                                              namirial: Constants.IdentityProvider.namirial,
                                                              poste: Constants.IdentityProvider.poste,

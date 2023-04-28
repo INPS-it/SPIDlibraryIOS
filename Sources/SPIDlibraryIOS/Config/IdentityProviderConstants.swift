@@ -9,7 +9,6 @@ import Foundation
 public enum IdentityProviderConstants: String {
     case aruba
     case infocert
-    case intesa
     case lepida
     case namirial
     case poste

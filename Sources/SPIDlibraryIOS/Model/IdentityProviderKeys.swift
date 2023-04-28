@@ -10,7 +10,6 @@ public class IdentityProviderKeys {
     
     public var aruba: String
     public var infocert: String
-    public var intesa: String
     public var lepida: String
     public var namirial: String
     public var poste: String
@@ -19,10 +18,9 @@ public class IdentityProviderKeys {
     public var teamsystem: String
     public var tim: String
     
-    public init(aruba: String, infocert: String, intesa: String, lepida: String, namirial: String, poste: String, sielte: String, spiditalia: String, teamsystem: String, tim: String) {
+    public init(aruba: String, infocert: String, lepida: String, namirial: String, poste: String, sielte: String, spiditalia: String, teamsystem: String, tim: String) {
         self.aruba = aruba
         self.infocert = infocert
-        self.intesa = intesa
         self.lepida = lepida
         self.namirial = namirial
         self.poste = poste

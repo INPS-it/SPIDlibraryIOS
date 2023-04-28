@@ -13,7 +13,6 @@ struct IdentityProviderViewModel {
         return [
             Provider(name: IdentityProviderConstants.aruba.rawValue, idp: identityProviderKeys.aruba),
             Provider(name: IdentityProviderConstants.infocert.rawValue, idp: identityProviderKeys.infocert),
-            Provider(name: IdentityProviderConstants.intesa.rawValue, idp: identityProviderKeys.intesa),
             Provider(name: IdentityProviderConstants.lepida.rawValue, idp: identityProviderKeys.lepida),
             Provider(name: IdentityProviderConstants.namirial.rawValue, idp: identityProviderKeys.namirial),
             Provider(name: IdentityProviderConstants.poste.rawValue, idp: identityProviderKeys.poste),

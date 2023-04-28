@@ -33,15 +33,14 @@ public class ViewController: UIViewController, SpidDelegate {
 4. Create a `SpidConfig` object containing the `authPageUrl` url, the `callbackPageUrl` url, the `spidPageInfoUrl` url, the `requestSpidPageUrl` url, an optional timeout `int` value (default value: 30sec), the `identityProviderKeys` object that contains the identity providers keys and the `queryStringParams` string:
 ```swift
  let identityProviderKeys = IdentityProviderKeys.init(aruba: Constants.IdentityProvider.aruba,
-                                                             infocert: Constants.IdentityProvider.infocert,
-                                                             intesa: Constants.IdentityProvider.intesa,
-                                                             lepida: Constants.IdentityProvider.lepida,
-                                                             namirial: Constants.IdentityProvider.namirial,
-                                                             poste: Constants.IdentityProvider.poste,
-                                                             sielte: Constants.IdentityProvider.sielte,
-                                                             spiditalia: Constants.IdentityProvider.spiditalia,
-                                                             teamsystem: Constants.IdentityProvider.teamsystem,
-                                                             tim: Constants.IdentityProvider.tim)
+                                                      infocert: Constants.IdentityProvider.infocert,
+                                                      lepida: Constants.IdentityProvider.lepida,
+                                                      namirial: Constants.IdentityProvider.namirial,
+                                                      poste: Constants.IdentityProvider.poste,
+                                                      sielte: Constants.IdentityProvider.sielte,
+                                                      spiditalia: Constants.IdentityProvider.spiditalia,
+                                                      teamsystem: Constants.IdentityProvider.teamsystem,
+                                                      tim: Constants.IdentityProvider.tim)
         
 let spidConfig = SpidConfig.init(authPageUrl: Constants.authPageUrl, callbackPageUrl: Constants.callbackPageUrl, spidPageInfoUrl: Constants.spidPageInfoUrl, requestSpidPageUrl: Constants.requestSpidPageUrl, identityProviderKeys: identityProviderKeys, queryStringParams: Constants.queryStringParams)
 ```

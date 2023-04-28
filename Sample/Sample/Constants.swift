@@ -17,7 +17,6 @@ struct Constants {
     struct IdentityProvider {
         static let aruba = "<Aruba id here>"
         static let infocert = "<Infocert id here>"
-        static let intesa = "<Intesa id here>"
         static let lepida = "<Lepida id here>"
         static let namirial = "<Namirial id here>"
         static let poste = "<Poste id here>"
