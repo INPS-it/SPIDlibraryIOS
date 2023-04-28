@@ -33,6 +33,8 @@ public class ViewController: UIViewController, SpidDelegate {
 4. Create a `SpidConfig` object containing the `authPageUrl` url, the `callbackPageUrl` url, the `spidPageInfoUrl` url, the `requestSpidPageUrl` url, an optional timeout `int` value (default value: 30sec), the `identityProviderKeys` object that contains the identity providers keys and the `queryStringParams` string:
 ```swift
  let identityProviderKeys = IdentityProviderKeys.init(aruba: Constants.IdentityProvider.aruba,
+                                                      etna: Constants.IdentityProvider.etna,
+                                                      infocamere: Constants.IdentityProvider.infocamere,
                                                       infocert: Constants.IdentityProvider.infocert,
                                                       lepida: Constants.IdentityProvider.lepida,
                                                       namirial: Constants.IdentityProvider.namirial,

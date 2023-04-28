@@ -12,6 +12,8 @@ struct IdentityProviderViewModel {
     func generateProviders() -> [Provider]{
         return [
             Provider(name: IdentityProviderConstants.aruba.rawValue, idp: identityProviderKeys.aruba),
+            Provider(name: IdentityProviderConstants.etna.rawValue, idp: identityProviderKeys.etna),
+            Provider(name: IdentityProviderConstants.infocamere.rawValue, idp: identityProviderKeys.infocamere),
             Provider(name: IdentityProviderConstants.infocert.rawValue, idp: identityProviderKeys.infocert),
             Provider(name: IdentityProviderConstants.lepida.rawValue, idp: identityProviderKeys.lepida),
             Provider(name: IdentityProviderConstants.namirial.rawValue, idp: identityProviderKeys.namirial),

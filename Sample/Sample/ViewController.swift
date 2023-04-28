@@ -18,6 +18,8 @@ class ViewController: UIViewController, SpidDelegate {
     @IBAction func tapLoginWithSpid(_ sender: Any) {
         
         let identityProviderKeys = IdentityProviderKeys.init(aruba: Constants.IdentityProvider.aruba,
+                                                             etna: Constants.IdentityProvider.etna,
+                                                             infocamere: Constants.IdentityProvider.infocamere,
                                                              infocert: Constants.IdentityProvider.infocert,
                                                              lepida: Constants.IdentityProvider.lepida,
                                                              namirial: Constants.IdentityProvider.namirial,

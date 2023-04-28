@@ -9,6 +9,8 @@ import Foundation
 public class IdentityProviderKeys {
     
     public var aruba: String
+    public var etna: String
+    public var infocamere: String
     public var infocert: String
     public var lepida: String
     public var namirial: String
@@ -18,8 +20,10 @@ public class IdentityProviderKeys {
     public var teamsystem: String
     public var tim: String
     
-    public init(aruba: String, infocert: String, lepida: String, namirial: String, poste: String, sielte: String, spiditalia: String, teamsystem: String, tim: String) {
+    public init(aruba: String, etna: String, infocamere: String, infocert: String, lepida: String, namirial: String, poste: String, sielte: String, spiditalia: String, teamsystem: String, tim: String) {
         self.aruba = aruba
+        self.etna = etna
+        self.infocamere = infocamere
         self.infocert = infocert
         self.lepida = lepida
         self.namirial = namirial
