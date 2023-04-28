@@ -397,7 +397,7 @@
 			repositoryURL = "https://github.com/INPS-it/SPIDlibraryIOS";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
+				minimumVersion = 1.0.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
