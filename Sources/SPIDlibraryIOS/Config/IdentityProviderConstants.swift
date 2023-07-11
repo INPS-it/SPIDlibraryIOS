@@ -11,6 +11,7 @@ public enum IdentityProviderConstants: String {
     case etna
     case infocamere
     case infocert
+    case intesi
     case lepida
     case namirial
     case poste
