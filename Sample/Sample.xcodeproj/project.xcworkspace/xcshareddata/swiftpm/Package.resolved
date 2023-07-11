@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/INPS-it/SPIDlibraryIOS",
       "state" : {
-        "revision" : "bb9b0811cd39d221d03916fd2d18e6a45337e48d",
-        "version" : "1.0.6"
+        "branch" : "main",
+        "revision" : "e8bf0b16ed5dfcee539a3911846fc027547437ac"
       }
     }
   ],

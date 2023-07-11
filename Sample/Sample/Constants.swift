@@ -19,6 +19,7 @@ struct Constants {
         static let etna = "<Etna id here>"
         static let infocamere = "<InfoCamere id here>"
         static let infocert = "<InfoCert id here>"
+        static let intesi = "<Intesi Group id here>"
         static let lepida = "<Lepida id here>"
         static let namirial = "<Namirial id here>"
         static let poste = "<Poste id here>"

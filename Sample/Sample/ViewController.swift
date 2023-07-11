@@ -21,6 +21,7 @@ class ViewController: UIViewController, SpidDelegate {
                                                              etna: Constants.IdentityProvider.etna,
                                                              infocamere: Constants.IdentityProvider.infocamere,
                                                              infocert: Constants.IdentityProvider.infocert,
+                                                             intesi: Constants.IdentityProvider.intesi,
                                                              lepida: Constants.IdentityProvider.lepida,
                                                              namirial: Constants.IdentityProvider.namirial,
                                                              poste: Constants.IdentityProvider.poste,
