@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 Istituto Nazionale Previdenza Sociale
+// SPDX-FileCopyrightText: 2024 Istituto Nazionale Previdenza Sociale
 //
 // SPDX-License-Identifier: BSD-3-Clause
 
 "title" = "SPID";
 "login_success" = "Login success";
-"login_error" = "An error as occurred";
+"login_error" = "An error has occurred";

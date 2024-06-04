@@ -12,7 +12,7 @@ SPIDlibraryIOS is a library for logging in via SPID through several different id
 ## Usage
 1. Add the following to your Package.swift:
 ```swift
-.package(url: "https://github.com/INPS-it/SPIDlibraryIOS", .upToNextMajor(from: "1.0.6"))
+.package(url: "https://github.com/INPS-it/SPIDlibraryIOS", .upToNextMajor(from: "1.0.8"))
 ```
 2. Declare `import SPIDlibraryIOS` in your ViewController.
 
