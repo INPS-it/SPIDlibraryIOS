@@ -30,7 +30,7 @@ class ViewController: UIViewController, SpidDelegate {
                                                              teamsystem: Constants.IdentityProvider.teamsystem,
                                                              tim: Constants.IdentityProvider.tim)
         
-        let spidConfig = SpidConfig.init(authPageUrl: Constants.authPageUrl, callbackPageUrl: Constants.callbackPageUrl, spidPageInfoUrl: Constants.spidPageInfoUrl, requestSpidPageUrl: Constants.requestSpidPageUrl, identityProviderKeys: identityProviderKeys, queryStringParams: Constants.queryStringParams)
+        let spidConfig = SpidConfig.init(authPageUrl: Constants.authPageUrl, callbackPageUrl: Constants.callbackPageUrl, spidPageInfoUrl: Constants.spidPageInfoUrl, requestSpidPageUrl: Constants.requestSpidPageUrl, identityProviderKeys: identityProviderKeys, queryStringParams: Constants.queryStringParams, showCloseButton: true)
         
         SpidViewController.present(delegate: self, spidConfig: spidConfig)
     }

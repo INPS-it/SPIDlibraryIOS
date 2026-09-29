@@ -12,6 +12,8 @@ public class SpidViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var infoBtn: UIButton!
     @IBOutlet weak var requestSpidBtn: UIButton!
+    @IBOutlet weak var closeBtn: UIButton!
+    @IBOutlet weak var tableViewTopConstraint: NSLayoutConstraint!
     
     public weak var spidDelegate: SpidDelegate?
     public var spidConfig: SpidConfig?
@@ -27,6 +29,12 @@ public class SpidViewController: UIViewController {
         
         infoBtn.titleLabel?.underline()
         requestSpidBtn.titleLabel?.underline()
+        
+        if spidConfig?.showCloseButton == false {
+            closeBtn.isHidden = true
+            tableViewTopConstraint.isActive = false
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        }
         
         if let error = ErrorManager.init(spidConfig: spidConfig).checkError() {
             self.dismiss(animated: true, completion: {

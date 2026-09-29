@@ -12,7 +12,7 @@ SPIDlibraryIOS is a library for logging in via SPID through several different id
 ## Usage
 1. Add the following to your Package.swift:
 ```swift
-.package(url: "https://github.com/INPS-it/SPIDlibraryIOS", .upToNextMajor(from: "1.0.8"))
+.package(url: "https://github.com/INPS-it/SPIDlibraryIOS", .upToNextMajor(from: "1.0.9"))
 ```
 2. Declare `import SPIDlibraryIOS` in your ViewController.
 
@@ -30,7 +30,7 @@ public class ViewController: UIViewController, SpidDelegate {
 }
 ```
 
-4. Create a `SpidConfig` object containing the `authPageUrl` url, the `callbackPageUrl` url, the `spidPageInfoUrl` url, the `requestSpidPageUrl` url, an optional timeout `int` value (default value: 30sec), the `identityProviderKeys` object that contains the identity providers keys and the `queryStringParams` string:
+4. Create a `SpidConfig` object containing the `authPageUrl` url, the `callbackPageUrl` url, the `spidPageInfoUrl` url, the `requestSpidPageUrl` url, an optional timeout `int` value (default value: 30sec), the `identityProviderKeys` object that contains the identity providers keys, the `queryStringParams` string and an optional `showCloseButton` `Bool` value to show or hide the close button in the identity providers and login screens (default value: `true`):
 ```swift
  let identityProviderKeys = IdentityProviderKeys.init(aruba: Constants.IdentityProvider.aruba,
                                                       etna: Constants.IdentityProvider.etna,
@@ -44,7 +44,7 @@ public class ViewController: UIViewController, SpidDelegate {
                                                       teamsystem: Constants.IdentityProvider.teamsystem,
                                                       tim: Constants.IdentityProvider.tim)
         
-let spidConfig = SpidConfig.init(authPageUrl: Constants.authPageUrl, callbackPageUrl: Constants.callbackPageUrl, spidPageInfoUrl: Constants.spidPageInfoUrl, requestSpidPageUrl: Constants.requestSpidPageUrl, identityProviderKeys: identityProviderKeys, queryStringParams: Constants.queryStringParams)
+let spidConfig = SpidConfig.init(authPageUrl: Constants.authPageUrl, callbackPageUrl: Constants.callbackPageUrl, spidPageInfoUrl: Constants.spidPageInfoUrl, requestSpidPageUrl: Constants.requestSpidPageUrl, identityProviderKeys: identityProviderKeys, queryStringParams: Constants.queryStringParams, showCloseButton: true)
 ```
 5. Present the `SpidViewController` instance:
 

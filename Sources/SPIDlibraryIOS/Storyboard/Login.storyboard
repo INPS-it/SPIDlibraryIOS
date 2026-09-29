@@ -50,6 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="XgG-sY-pVq"/>
                     <connections>
+                        <outlet property="closeBtn" destination="rjG-RA-vfH" id="k4P-cQ-8vN"/>
                         <outlet property="webViewProvider" destination="lA1-lD-Gmm" id="ptk-SO-oaz"/>
                     </connections>
                 </viewController>

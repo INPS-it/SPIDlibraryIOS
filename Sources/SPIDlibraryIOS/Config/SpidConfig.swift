@@ -22,10 +22,12 @@ public class SpidConfig {
     public var queryStringParams: String? = nil
     // This model contains the identity providers keys
     public var identityProviderKeys: IdentityProviderKeys?
+    // Show the close button in the identity providers and login screens
+    public var showCloseButton: Bool = true
     
     public init() {}
     
-    public convenience init(authPageUrl: String, callbackPageUrl: String, spidPageInfoUrl: String, requestSpidPageUrl: String, identityProviderKeys: IdentityProviderKeys?, timeout: Int = 30, queryStringParams: String? = nil){
+    public convenience init(authPageUrl: String, callbackPageUrl: String, spidPageInfoUrl: String, requestSpidPageUrl: String, identityProviderKeys: IdentityProviderKeys?, timeout: Int = 30, queryStringParams: String? = nil, showCloseButton: Bool = true){
         self.init()
         self.authPageUrl = authPageUrl
         self.callbackPageUrl = callbackPageUrl
@@ -34,6 +36,7 @@ public class SpidConfig {
         self.identityProviderKeys = identityProviderKeys
         self.timeout = UIAccessibility.isVoiceOverRunning ? Int.max : timeout
         self.queryStringParams = queryStringParams
+        self.showCloseButton = showCloseButton
     }
 }
 

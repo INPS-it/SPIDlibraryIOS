@@ -116,9 +116,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="0qV-Dj-Udp"/>
                     <connections>
+                        <outlet property="closeBtn" destination="3PP-1R-nSU" id="c7B-hX-q2L"/>
                         <outlet property="infoBtn" destination="qjc-4X-GmZ" id="xni-1S-DAM"/>
                         <outlet property="requestSpidBtn" destination="DsM-N2-CJx" id="ouR-y7-s5W"/>
                         <outlet property="tableView" destination="BMk-gJ-QOE" id="zPa-rw-oRo"/>
+                        <outlet property="tableViewTopConstraint" destination="lQo-Cx-TWL" id="t9K-wE-3fN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axb-wA-iJr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

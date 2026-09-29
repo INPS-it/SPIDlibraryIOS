@@ -10,6 +10,7 @@ import WebKit
 class LoginViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var webViewProvider: WKWebView!
+    @IBOutlet weak var closeBtn: UIButton!
     
     var provider: Provider?
     var spidDelegate: SpidDelegate?
@@ -21,6 +22,7 @@ class LoginViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         self.webViewProvider.navigationDelegate = self
         timeout = spidConfig?.timeout
+        closeBtn.isHidden = spidConfig?.showCloseButton == false
         
         if let provider = provider,
            let authPageUrl = spidConfig?.authPageUrl {
